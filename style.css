@@ -1,0 +1,80 @@
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background: #FDFDFD;
+    margin: 0 auto;
+    font-family: system-ui;
+}
+
+main {
+    max-width: 80ch;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+
+#colorPicker {
+    width: 4rem;
+    height: 2rem;
+    margin-top: .5rem;
+}
+
+.color-label {
+    font-size: 1.2rem;
+}
+
+.color-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.colors {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2.5rem auto;
+}
+
+.colors .column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .75rem;
+}
+
+.colors p {
+    font-family: 'Consolas', monospace;
+    padding: .75rem .5rem;
+    width: 20ch;
+    max-width: 21ch;
+    border: .05rem solid lightgray;
+    margin: 0 auto;
+}
+
+.colors p:nth-child(2) {
+    margin-right: 1rem;
+}
+
+.canvas {
+    height: 10rem;
+    width: 10rem;
+    margin-left: 1.5rem;
+    background-color: #32a852;
+}

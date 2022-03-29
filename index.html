@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Color Picker</title>
+        <meta name="description" content="An interactive page for finding colors. The colors will be ouput as Hex, RGB and HSL.">
+        <meta property="og:title" content="11ty Color Picker">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="An interactive page for finding colors. The colors will be ouput as Hex, RGB and HSL.">
+        <meta property="og:url" content="https://11tycolorpicker.netlify.app">
+        <meta property="og:img" content="https://11tycolorpicker.netlify.app/images/socialShare.png">
+        <meta property="og:img:alt" content="A screenshot of the 11ty Color Picker home page.">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@tannerdolby">
+        <meta name="twitter:title" content="11ty Color Picker">
+        <meta name="twitter:description" content="An interactive page for finding colors. The colors will be ouput as Hex, RGB and HSL.">
+        <meta name="twitter:image" content="https://11tycolorpicker.netlify.app/images/socialShare.png">
+        <meta name="twitter:image:alt" content="A screenshot of the 11ty Color Picker home page.">
+        <link rel="canonical" href="https://11tycolorpicker.netlify.app/">
+        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://11tycolorpicker.netlify.app/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://11tycolorpicker.netlify.app/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://11tycolorpicker.netlify.app/images/favicon-16x16.png">
+    </head>
+    <body>
+        <main>
+            <h1>Color Picker</h1>
+            <div class="color-container">
+                <div>
+                    <label class="color-label" for="colorPicker">Choose a color:</label>
+                    <img class="colorpick-eyedropper-input-trigger">
+                    <input id="colorPicker" type="color" value="#32a852" name="colorPicker" colorpick-eyedropper-active="true">
+                </div>
+                <div class="canvas"></div>
+            </div>
+            <div class="colors">
+                <div class="column">
+                    <label for="res1">RGB</label>
+                    <p id="res1">#32a852</p>
+                </div>
+                <div class="column">
+                    <label for="res2">Hex</label>
+                    <p id="res2">rgb(50, 168, 82)</p>
+                </div>
+                <div class="column">
+                    <label for="res3">HSL</label>
+                    <p id="res3">hsl(136, 54%, 42%)</p>
+                </div>
+            </div>
+        </main>
+        <script src="color.js" defer></script>
+    </body>
+</html>
